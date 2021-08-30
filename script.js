@@ -35,7 +35,6 @@ const showCarouselDots = () => {
   for (let i = 0; i < images.length; i++) {
     let dot = document.createElement("span");
     dot.className = "dot";
-    dot.innerHTML = `dot${i}`;
     dotsDiv.appendChild(dot);
   }
 };
@@ -102,4 +101,4 @@ const navigateImages = (direction) => {
 window.onload = () => {
   showCarouselDots();
   setCurrentImage();
-}
+};

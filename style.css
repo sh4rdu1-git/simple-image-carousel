@@ -1,0 +1,70 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+}
+
+
+.btn {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  color: hsl(0, 0%, 100%);
+  transition: 0.6s ease;
+}
+
+.btn:hover {
+  background-color: hsla(0, 1%, 23%, 0.671);
+}
+
+.btn-prev {
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+.btn-next {
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+.dots {
+  text-align: center;
+  margin: 2px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 2px;
+  display: inline-block;
+  background-color: hsl(0, 0%, 75%);
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: hsl(0, 0%, 50%);
+}
