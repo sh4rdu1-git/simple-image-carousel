@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Carousel</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- Image -->
+        <div class="image fade">
+          <img id="currentImage" src="" alt="" />
+        </div>
+
+        <!-- Button to view previous image -->
+        <i
+          id="btn-prev"
+          onclick="navigateImages('prev')"
+          class="fas fa-angle-left"
+        ></i>
+
+        <!-- Button to view next image -->
+        <i
+          id="btn-next"
+          onclick="navigateImages('next')"
+          class="fas fa-angle-right"
+        ></i>
+
+        <!-- Dots below the displayed image -->
+        <div id="dots"></div>
+
+        <!-- / container div -->
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
